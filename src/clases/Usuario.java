@@ -12,7 +12,7 @@ public class Usuario {
 	private String				nombre;			// Max 30
 	private String				apellidos;			// Max 50
 	private String				cuetaPaypal;		// Max 50
-	private String				contraseñaPaypal;	// Max 20
+	private String				contrasenyaPaypal;	// Max 20
 	private Set<Direccion>		direcciones;
 	private Set<Cuenta>			cuentas;
 	private Set<Pago>			pagos;
@@ -24,14 +24,14 @@ public class Usuario {
 	}
 
 	public Usuario(String email, String nombre, String apellidos, String cuetaPaypal,
-			String contraseñaPaypal, Set<Direccion> direcciones, Set<Cuenta> cuentas,
+			String contrasenyaPaypal, Set<Direccion> direcciones, Set<Cuenta> cuentas,
 			Set<Pago> pagos, Set<Reproduccion> reproducciones)
 	{
 		this.email = email;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.cuetaPaypal = cuetaPaypal;
-		this.contraseñaPaypal = contraseñaPaypal;
+		this.contrasenyaPaypal = contrasenyaPaypal;
 		this.direcciones = direcciones;
 		this.cuentas = cuentas;
 		this.pagos = pagos;
@@ -78,14 +78,14 @@ public class Usuario {
 		this.cuetaPaypal = cuetaPaypal;
 	}
 
-	public String getContraseñaPaypal()
+	public String getContrasenyaPaypal()
 	{
-		return contraseñaPaypal;
+		return contrasenyaPaypal;
 	}
 
-	public void setContraseñaPaypal(String contraseñaPaypal)
+	public void setContrasenyaPaypal(String contrasenyaPaypal)
 	{
-		this.contraseñaPaypal = contraseñaPaypal;
+		this.contrasenyaPaypal = contrasenyaPaypal;
 	}
 
 	public Set<Direccion> getDirecciones()

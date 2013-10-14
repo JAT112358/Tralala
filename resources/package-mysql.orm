@@ -104,7 +104,7 @@
             <field name="cuentaPaypal">
 				<column length="50" jdbc-type="VARCHAR"/>
             </field>
-            <field name="contraseñaPaypal">
+            <field name="contrasenyaPaypal">
 				<column length="20" jdbc-type="VARCHAR"/>
             </field>
             <field name="direcciones">
