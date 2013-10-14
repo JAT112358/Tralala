@@ -1,9 +1,13 @@
-package entities;
+package clases;
+
+/**
+ * @author Jordan Aranda Tejada
+ */
 
 public class Cuenta {
 
-	private String	banco;
-	private long	numero;
+	private String	banco;		// Max 20
+	private long	numero;	// Max 10
 	private Usuario	usuario;
 
 	public Cuenta()

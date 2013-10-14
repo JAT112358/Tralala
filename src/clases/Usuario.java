@@ -1,14 +1,18 @@
-package entities;
+package clases;
 
 import java.util.Set;
 
+/**
+ * @author Jordan Aranda Tejada
+ */
+
 public class Usuario {
 
-	private String				email;
-	private String				nombre;
-	private String				apellidos;
-	private String				cuetaPaypal;
-	private String				contraseñaPaypal;
+	private String				email;				// Max 50
+	private String				nombre;			// Max 30
+	private String				apellidos;			// Max 50
+	private String				cuetaPaypal;		// Max 50
+	private String				contraseñaPaypal;	// Max 20
 	private Set<Direccion>		direcciones;
 	private Set<Cuenta>			cuentas;
 	private Set<Pago>			pagos;

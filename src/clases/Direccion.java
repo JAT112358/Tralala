@@ -1,11 +1,15 @@
-package entities;
+package clases;
+
+/**
+ * @author Jordan Aranda Tejada
+ */
 
 public class Direccion {
 
-	private String	direccion;
-	private String	localidad;
-	private String	provincia;
-	private String	pais;
+	private String	direccion;	// Max 60
+	private String	localidad;	// Max 40
+	private String	provincia;	// Max 40
+	private String	pais;		// Max 40
 	private Usuario	usuario;
 
 	public Direccion()

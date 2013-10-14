@@ -1,13 +1,17 @@
-package entities;
+package clases;
+
+/**
+ * @author Jordan Aranda Tejada
+ */
 
 public class Cancion {
 
-	private String	titulo;
-	private int		duracion;
-	private String	letra;
-	private String	album;
-	private String	artista;
-	private String	tipo;
+	private String	titulo;	// Max 30
+	private int		duracion;	// Max 5
+	private String	letra;		// Max 1000
+	private String	album;		// Max 30
+	private String	artista;	// Max 30
+	private String	tipo;		// Max 30
 	private double	precio;
 
 	public Cancion()
