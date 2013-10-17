@@ -20,7 +20,7 @@ public class Song {
 	}
 
 	public Song(String title, int duration, String lyrics, String album, String artist,
-			String type, double precio)
+			String type, double price)
 	{
 		this.title = title;
 		this.duration = duration;
@@ -28,7 +28,7 @@ public class Song {
 		this.album = album;
 		this.artist = artist;
 		this.type = type;
-		this.price = precio;
+		this.price = price;
 	}
 
 	public String getTitle()

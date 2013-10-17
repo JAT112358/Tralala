@@ -119,7 +119,6 @@
             <field name="reproductions">
             	<collection element-type="entities.Reproduction"/>
             </field>
-        </class>
-        
+        </class>  
     </package>
 </orm>

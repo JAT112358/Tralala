@@ -17,13 +17,13 @@ public class Address {
 
 	}
 
-	public Address(String direccion, String localidad, String provincia, String pais, User usuario)
+	public Address(String direction, String location, String province, String country, User user)
 	{
-		this.address = direccion;
-		this.location = localidad;
-		this.province = provincia;
-		this.country = pais;
-		this.user = usuario;
+		this.address = direction;
+		this.location = location;
+		this.province = province;
+		this.country = country;
+		this.user = user;
 	}
 
 	public String getAddress()

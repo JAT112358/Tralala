@@ -51,7 +51,7 @@
     <target name="createschema">
         <taskdef name="schematool" classpathref="classpath" classname="org.datanucleus.store.schema.SchemaToolTask"/>
 
-        <schematool mode="create" classpathref="classpath" failonerror="true" persistenceUnit="TralalaPersistence" props="META-INF/persistence.xml">
+        <schematool mode="create" classpathref="classpath" failonerror="true" persistenceUnit="exampleJDO" props="META-INF/persistence.xml">
             <sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
             <fileset dir="${bin.dir}">
                 <include name="**/*.class"/>

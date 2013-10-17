@@ -1,5 +1,6 @@
 package entities;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -24,18 +25,17 @@ public class User {
 	}
 
 	public User(String email, String name, String lastname, String paypalAccount,
-			String paypalPassword, Set<Address> addresses, Set<Account> accounts,
-			Set<Payment> payments, Set<Reproduction> reproductions)
+			String paypalPassword)
 	{
 		this.email = email;
 		this.name = name;
 		this.lastname = lastname;
 		this.paypalAccount = paypalAccount;
 		this.paypalPassword = paypalPassword;
-		this.addresses = addresses;
-		this.accounts = accounts;
-		this.payments = payments;
-		this.reproductions = reproductions;
+		this.addresses = new HashSet<Address>();
+		this.accounts = new HashSet<Account>();
+		this.payments = new HashSet<Payment>();
+		this.reproductions = new HashSet<Reproduction>();
 	}
 
 	public String getEmail()
@@ -88,14 +88,36 @@ public class User {
 		this.paypalPassword = paypalPassword;
 	}
 
+	// ADDRESSES
+	public void addAddress(Address address)
+	{
+		addresses.add(address);
+	}
+
+	public void removeAddress(Address address)
+	{
+		addresses.remove(address);
+	}
+
 	public Set<Address> getAddresses()
 	{
 		return addresses;
 	}
 
-	public void setAddresses(Set<Address> addresses)
+	public int getNumberOfAddresses()
 	{
-		this.addresses = addresses;
+		return addresses.size();
+	}
+
+	// ACCOUNTS
+	public void addAccount(Account account)
+	{
+		accounts.add(account);
+	}
+
+	public void removeAccount(Account account)
+	{
+		accounts.remove(account);
 	}
 
 	public Set<Account> getAccounts()
@@ -103,9 +125,20 @@ public class User {
 		return accounts;
 	}
 
-	public void setAccounts(Set<Account> accounts)
+	public int getNumberOfAccounts()
 	{
-		this.accounts = accounts;
+		return accounts.size();
+	}
+
+	// PAYMENTS
+	public void addPayment(Payment payment)
+	{
+		payments.add(payment);
+	}
+
+	public void removePayment(Payment payment)
+	{
+		payments.remove(payment);
 	}
 
 	public Set<Payment> getPayments()
@@ -113,9 +146,20 @@ public class User {
 		return payments;
 	}
 
-	public void setPayments(Set<Payment> payments)
+	public int getNumberOfPayments()
 	{
-		this.payments = payments;
+		return payments.size();
+	}
+
+	// REPRODUCTIONS
+	public void addReproduction(Reproduction reproduction)
+	{
+		reproductions.add(reproduction);
+	}
+
+	public void removeReproduction(Reproduction reproduction)
+	{
+		reproductions.remove(reproduction);
 	}
 
 	public Set<Reproduction> getReproductions()
@@ -123,15 +167,23 @@ public class User {
 		return reproductions;
 	}
 
-	public void setReproductions(Set<Reproduction> reproductions)
+	public int getNumberOfReproductions()
 	{
-		this.reproductions = reproductions;
+		return reproductions.size();
 	}
 
-	public double getImporteMensual()
+	// To String
+	@Override
+	public String toString()
+	{
+		return "User [name=" + name + ", lastname=" + lastname + "]";
+	}
+
+	// Monthly amount
+	public double getMonthlyAmount()
 	{
 		double total = 0;
-		// TO DO Obtener el importe mensual.
+		// TO DO Get monthly amount.
 		return total;
 	}
 }
