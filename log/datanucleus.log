@@ -1,1 +1,54 @@
-﻿
+﻿08:18:55,829 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+No se puede leer el archivo de propiedades "META-INF/persistence.xml"
+org.datanucleus.exceptions.NucleusUserException: No se puede leer el archivo de propiedades "META-INF/persistence.xml"
+	at org.datanucleus.util.PersistenceUtils.setPropertiesUsingFile(PersistenceUtils.java:85)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:270)
+Caused by: java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at org.datanucleus.util.PersistenceUtils.setPropertiesUsingFile(PersistenceUtils.java:79)
+	... 1 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at org.datanucleus.util.PersistenceUtils.setPropertiesUsingFile(PersistenceUtils.java:79)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:270)
+09:04:43,948 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+No se puede leer el archivo de propiedades "META-INF/persistence.xml"
+org.datanucleus.exceptions.NucleusUserException: No se puede leer el archivo de propiedades "META-INF/persistence.xml"
+	at org.datanucleus.util.PersistenceUtils.setPropertiesUsingFile(PersistenceUtils.java:85)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:270)
+Caused by: java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at org.datanucleus.util.PersistenceUtils.setPropertiesUsingFile(PersistenceUtils.java:79)
+	... 1 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at org.datanucleus.util.PersistenceUtils.setPropertiesUsingFile(PersistenceUtils.java:79)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:270)
+09:06:27,715 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+No se puede leer el archivo de propiedades "META-INF/persistence.xml"
+org.datanucleus.exceptions.NucleusUserException: No se puede leer el archivo de propiedades "META-INF/persistence.xml"
+	at org.datanucleus.util.PersistenceUtils.setPropertiesUsingFile(PersistenceUtils.java:85)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:270)
+Caused by: java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at org.datanucleus.util.PersistenceUtils.setPropertiesUsingFile(PersistenceUtils.java:79)
+	... 1 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at org.datanucleus.util.PersistenceUtils.setPropertiesUsingFile(PersistenceUtils.java:79)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:270)

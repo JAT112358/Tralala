@@ -5,119 +5,119 @@
 	"-//Sun Microsystems, Inc.//DTD Java Data Objects Metadata 2.0//EN"
 	"http://java.sun.com/dtd/orm_2_0.dtd">
 <orm>
-    <package name="clases.direcciones">
+    <package name="entities">
         
-        <!-- DIRECCIÓN -->
-        <class name="Direccion">
-            <field name="direccion">
+        <!-- ADDRESS -->
+        <class name="Address">
+            <field name="address">
                 <column length="60" jdbc-type="VARCHAR"/>
             </field>
-			<field name="localidad">
+			<field name="location">
                 <column length="40" jdbc-type="VARCHAR"/>
             </field>
-			<field name="provincia">
+			<field name="province">
                 <column length="40" jdbc-type="VARCHAR"/>
             </field>
-            <field name="pais">
+            <field name="country">
                 <column length="40" jdbc-type="VARCHAR"/>
             </field>
             <field name="user">
             </field>
         </class>
 
-		<!-- CUENTA -->
-        <class name="Cuenta">
-        	<field name="banco">
+		<!-- ACCOUNT -->
+        <class name="Account">
+        	<field name="bank">
                 <column length="20" jdbc-type="VARCHAR"/>
             </field>
-            <field name="numero">
+            <field name="number">
                 <column jdbc-type="LONG"/>
             </field>
             <field name="user">
             </field>
         </class>
 		
-		<!-- CANCIÓN -->
-		<class name="Cancion">
-        	<field name="titulo">
+		<!-- SONG -->
+		<class name="Song">
+        	<field name="title">
                 <column length="30" jdbc-type="VARCHAR"/>
             </field>
-            <field name="duracion">
+            <field name="duration">
                 <column jdbc-type="INT"/>
             </field>
-            <field name="letra">
+            <field name="lyrics">
                 <column length="1000" jdbc-type="VARCHAR"/>
             </field>
             <field name="album">
                 <column length="30" jdbc-type="VARCHAR"/>
             </field>
-            <field name="artista">
+            <field name="artist">
                 <column length="30" jdbc-type="VARCHAR"/>
             </field>
-            <field name="tipo">
+            <field name="type">
                 <column length="30" jdbc-type="VARCHAR"/>
             </field>
-            <field name="precio">
+            <field name="price">
                 <column jdbc-type="DOUBLE"/>
             </field>
         </class>
 		
-		<!-- PAGO -->	
+		<!-- PAYMENT -->	
 		<class name="Pago">
-            <field name="fecha">
+            <field name="date">
                 <column jdbc-type="DATE"/>
             </field>
-			<field name="pagado">
+			<field name="paid">
                 <column jdbc-type="INT"/>
             </field>
-			<field name="usuario">
+			<field name="user">
             </field>
-            <field name="reproducciones">
-            	<collection element-type="clases.Reproduccion"/>
+            <field name="reproductions">
+            	<collection element-type="entities.Reproduction"/>
             </field>
         </class>
         
-        <!-- REPRODUCCIÓN -->	
-		<class name="Reproduccion">
-            <field name="cancion">
+        <!-- REPRODUCTION -->	
+		<class name="Reproduction">
+            <field name="song">
             </field>
-			<field name="fecha">
+			<field name="date">
                 <column jdbc-type="DATE"/>
             </field>
-			<field name="usuario">
+			<field name="user">
             </field>
-            <field name="pago">
+            <field name="payment">
             </field>
         </class>
         
-        <!-- USUARIO -->	
-		<class name="Usuario">
+        <!-- USER -->	
+		<class name="User">
             <field name="email">
 				<column length="50" jdbc-type="VARCHAR"/>
             </field>
-			<field name="nombre">
+			<field name="name">
 				<column length="30" jdbc-type="VARCHAR"/>
             </field>
-            <field name="apellidos">
+            <field name="lastname">
 				<column length="50" jdbc-type="VARCHAR"/>
             </field>
-            <field name="cuentaPaypal">
+            <field name="paypalAccount">
 				<column length="50" jdbc-type="VARCHAR"/>
             </field>
-            <field name="contrasenyaPaypal">
+            <field name="paypalPassword">
 				<column length="20" jdbc-type="VARCHAR"/>
             </field>
-            <field name="direcciones">
-            	<collection element-type="clases.Direccion"/>
+            <field name="addresses">
+            	<collection element-type="entities.Address"/>
             </field>
-            <field name="cuentas">
-            	<collection element-type="clases.Cuenta"/>
+            <field name="accounts">
+            	<collection element-type="entities.Account"/>
             </field>
-            <field name="pagos">
-            	<collection element-type="clases.Pago"/>
+            <field name="payments">
+            	<collection element-type="entities.Payment"/>
             </field>
-            <field name="reproducciones">
-            	<collection element-type="clases.Reproduccion"/>
+            <field name="reproductions">
+            	<collection element-type="entities.Reproduction"/>
             </field>
         </class>
         

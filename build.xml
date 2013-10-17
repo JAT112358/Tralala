@@ -73,7 +73,7 @@
 
     <!-- TARGET : Run -->	
 	<target name="run" depends="enhance">
-        <java classname="utilidades.Main" classpathref="classpath" fork="true">
+        <java classname="utilities.Main" classpathref="classpath" fork="true">
         	<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
 		</java>
     </target>
